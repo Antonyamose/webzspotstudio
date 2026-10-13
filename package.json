@@ -1,0 +1,10 @@
+{
+  "name": "webzspotstudio",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix landing run build && npm --prefix documentation run build && node scripts/prepare-dist.cjs"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}

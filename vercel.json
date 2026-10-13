@@ -1,0 +1,19 @@
+
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/documentation",
+      "destination": "/documentation/index.html"
+    },
+    {
+      "source": "/documentation/:path*",
+      "destination": "/documentation/index.html"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}
