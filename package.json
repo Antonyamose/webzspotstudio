@@ -1,9 +1,12 @@
-
 {
   "name": "webzspotstudio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "concurrently \"npm --prefix landing run dev -- --port 5173\" \"npm --prefix documentation run dev -- --port 5174\"",
     "build": "npm --prefix landing run build && npm --prefix documentation run build && node scripts/prepare-dist.cjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
