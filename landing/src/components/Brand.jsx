@@ -16,12 +16,22 @@ const Brands = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
-      className="container mx-auto max-w-7xl px-4 overflow-hidden bg-white py-8 sm:py-10 md:py-12"
+      className="
+        container mx-auto max-w-7xl
+        px-4 overflow-hidden bg-white
+        py-8 sm:py-10 md:py-12
+      "
     >
       <div className="flex flex-col md:flex-row items-center w-full">
 
-        {/* Heading */}
-        <div className="w-full md:w-[28%] shrink-0 text-center md:text-left">
+        {/* HEADING */}
+        <div
+          className="
+            w-full md:w-[22%]
+            shrink-0
+            text-center md:text-left
+          "
+        >
           <p className="md:text-xl font-medium leading-tight text-black">
             Trusted by leading
             <br className="hidden md:block" />
@@ -30,10 +40,20 @@ const Brands = () => {
           </p>
         </div>
 
-        {/* Logo Slider */}
-        <div className="w-full md:w-[72%] overflow-hidden mt-8 md:mt-0">
+        {/* LOGO SLIDER */}
+        <div
+          className="
+            w-full md:w-[78%]
+            overflow-hidden
+            mt-6 md:mt-0
+          "
+        >
           <motion.div
-            className="flex w-max items-center gap-14 sm:gap-20 md:gap-24 whitespace-nowrap"
+            className="
+              flex w-max items-center
+              gap-10 sm:gap-12 md:gap-16
+              whitespace-nowrap
+            "
             animate={{
               x: ["0%", "-50%"],
             }}
@@ -46,7 +66,12 @@ const Brands = () => {
             {[...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
-                className="md:text-xl font-extrabold text-gray-400"
+                className="
+                  text-base md:text-xl
+                  font-extrabold
+                  text-gray-400
+                  shrink-0
+                "
               >
                 {logo}
               </div>
