@@ -294,7 +294,7 @@ export default function Testimonials() {
               relative
               w-full
               overflow-hidden
-              bg-white
+              
               py-6
               sm:py-8
               md:py-10
@@ -303,17 +303,16 @@ export default function Testimonials() {
             "
           >
             {/* LEFT BLUR / FADE */}
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-20 w-6 sm:w-8 md:w-12 backdrop-blur-[2px] bg-gradient-to-r from-white via-white/80 to-transparent" />
+<div className="pointer-events-none absolute left-0 top-0 bottom-0 z-20 w-6 sm:w-8 md:w-12 backdrop-blur-[2px] bg-gradient-to-r from-gray-100 via-gray-100/80 to-transparent" />
 
-            {/* EXTRA LEFT SOFT BLUR */}
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-8 sm:w-12 md:w-16 backdrop-blur-[1px] bg-gradient-to-r from-white/70 to-transparent" />
+{/* EXTRA LEFT SOFT BLUR */}
+<div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-8 sm:w-12 md:w-16 backdrop-blur-[1px] bg-gradient-to-r from-gray-100/70 to-transparent" />
 
-            {/* RIGHT BLUR / FADE */}
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-20 w-6 sm:w-8 md:w-12 backdrop-blur-[2px] bg-gradient-to-l from-white via-white/80 to-transparent" />
+{/* RIGHT BLUR / FADE */}
+<div className="pointer-events-none absolute right-0 top-0 bottom-0 z-20 w-6 sm:w-8 md:w-12 backdrop-blur-[2px] bg-gradient-to-l from-gray-100 via-gray-100/80 to-transparent" />
 
-            {/* EXTRA RIGHT SOFT BLUR */}
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-8 sm:w-12 md:w-16 backdrop-blur-[1px] bg-gradient-to-l from-white/70 to-transparent" />
-
+{/* EXTRA RIGHT SOFT BLUR */}
+<div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-8 sm:w-12 md:w-16 backdrop-blur-[1px] bg-gradient-to-l from-gray-100/70 to-transparent" />
             {/* MOVING CARDS */}
             <motion.div
               className="
@@ -350,7 +349,7 @@ export default function Testimonials() {
                       lg:h-[330px]
 
                       flex-shrink-0
-                      bg-gray-100
+                      bg-white
 
                       rounded-[25px]
                       sm:rounded-[27px]
