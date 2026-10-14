@@ -11,6 +11,16 @@ const Headertext = () => {
     "Deliver & Download",
   ];
 
+  const handleFreeTrial = () => {
+    window.location.href =
+      "https://webzspot-studio-verse.vercel.app/signup";
+  };
+
+  const handleSignUp = () => {
+    window.location.href =
+      "https://webzspot-studio-verse.vercel.app/login";
+  };
+
   return (
     <motion.section
       className="
@@ -114,7 +124,10 @@ const Headertext = () => {
             gap-3 sm:gap-4 md:gap-5
           "
         >
+          {/* START FREE TRIAL */}
           <motion.button
+            type="button"
+            onClick={handleFreeTrial}
             whileHover={{ opacity: 0.7 }}
             whileTap={{ scale: 0.9 }}
             className="
@@ -131,7 +144,10 @@ const Headertext = () => {
             Start your Free Trial
           </motion.button>
 
+          {/* SIGN UP BUTTON */}
           <motion.button
+            type="button"
+            onClick={handleSignUp}
             whileHover={{ opacity: 0.7 }}
             whileTap={{ scale: 0.9 }}
             className="
